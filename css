@@ -1,5 +1,19 @@
-#tb{
+#table{
+  background-color: rgb(0, 255, 42);
+  color: rgb(255, 0, 230);
+}
 
-  background-color: red;
-  color:#fff;
+button{
+  background-color: rgb(0, 225, 255);
+  border: 0;
+  border-radius: 50px;
+  color: rgb(111, 0, 255);
+  text-shadow: 3px ;
+}
+#calculator{
+  width: 9999999px;
+  background: #c7b39b url();
+}
+#buttons{
+  padding: 15px;
 }
