@@ -1,14 +1,14 @@
-hello = "Привет мир"
+hello = ""
 let num1
 let operation
-function set_operation(op){
-    number = document.forms.screen.data.value
-      num1 = number
+function set_operation(op) {
+  number = document.forms.screen.data.value
+  num1 = number
   operation = op
   document.forms.screen.data.value = ""
 }
-function sin(){
-    document.forms.screen.data.value = Math.sin
+function sin() {
+  document.forms.screen.data.value = Math.sin
   number = parseFloat(number)
   let res = Math.sin(number)
   document.forms.screen.data.value = res
@@ -18,39 +18,45 @@ function put_to_memory() {
   value = number
   document.forms.screen.data.value = ""
 }
+function get_from_memory() {
+  document.forms.screen.data.value = value
+}
 function input_pi() {
-    document.forms.screen.data.value = Math.PI
-  }
-  function result(){
-    number = document.forms.screen.data.value
+  document.forms.screen.data.value = Math.PI
+}
+function steret(){
+  document.forms.screen.data.value = ""
+}
+function result() {
+  number = document.forms.screen.data.value
   num1 = parseFloat(num1)
   number = parseFloat(number)
-  if (operation == "+"){
+  if (operation == "+") {
     let res = num1 + number
-  document.forms.screen.data.value = res
-}
-  if (operation == "-"){
+    document.forms.screen.data.value = res
+  }
+  if (operation == "-") {
     let res = num1 - number
-  document.forms.screen.data.value = res
-}
+    document.forms.screen.data.value = res
+  }
   if (operation == ":") {
     let res = num1 / number
-  document.forms.screen.data.value = res
-}
+    document.forms.screen.data.value = res
+  }
   if (operation == "*") {
     let res = num1 * number
-  document.forms.screen.data.value = res
+    document.forms.screen.data.value = res
+  }
 }
-}
-function init(){
-    el = document.getElementById("hello")
+function init() {
+  el = document.getElementById("hello")
   el.innerHTML = hello
 }
 el = document.getElementById("hello")
 el.innerHTML = hello
 
-function add_digit(n){
-    number = document.forms.screen.data.value
-    number += n
-document.forms.screen.data.value = number
+function add_digit(n) {
+  number = document.forms.screen.data.value
+  number += n
+  document.forms.screen.data.value = number
 }
